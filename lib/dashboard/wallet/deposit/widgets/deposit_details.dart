@@ -32,7 +32,8 @@ Widget depositDetailsWidget(BuildContext context) {
                   child: SvgPicture.asset(
                     'assets/icons/bank (1).svg',
                     height: 24,
-                    colorFilter: ColorFilter.mode(Colors.grey, BlendMode.srcIn),
+                    colorFilter: ColorFilter.mode(
+                      Color(0xFF2f2637), BlendMode.srcIn),
                   ),
                 ),
                 //Column for bank details
@@ -75,7 +76,8 @@ Widget depositDetailsWidget(BuildContext context) {
                   child: SvgPicture.asset(
                     'assets/icons/user (2).svg',
                     height: 24,
-                    colorFilter: ColorFilter.mode(Colors.grey, BlendMode.srcIn),
+                    colorFilter: ColorFilter.mode(
+                      Color(0xFF2f2637), BlendMode.srcIn),
                   ),
                 ),
                 //Column for bank details
@@ -118,10 +120,10 @@ Widget depositDetailsWidget(BuildContext context) {
                   child: SvgPicture.asset(
                     'assets/icons/pin_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg',
                     height: 24,
-                    // colorFilter: ColorFilter.mode(
-                    //   Colors.grey,
-                    //   BlendMode.srcIn,
-                    // ),
+                    colorFilter: ColorFilter.mode(
+                      Color(0xFF2f2637),
+                      BlendMode.srcIn,
+                    ),
                   ),
                 ),
                 //Column for bank details

@@ -20,25 +20,27 @@ class _HomePageState extends State<HomePage> {
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.all(16),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              //QwixaLogo  and icon sections
-              welcomeWidget(),
-              SizedBox(height: 16),
-              //Wallet Card
-              walletCardWidget(context),
-              SizedBox(height: 16),
-              //Service card
-              quickServicesWidget(),
-              SizedBox(height: 16),
-              //Ads section
-              adsWidget(),
-              SizedBox(height: 16),
-              //Transaction history
-              recentTransactionWidget(),
-              
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                //QwixaLogo  and icon sections
+                welcomeWidget(),
+                SizedBox(height: 16),
+                //Wallet Card
+                walletCardWidget(context),
+                SizedBox(height: 16),
+                //Service card
+                quickServicesWidget(context),
+                SizedBox(height: 16),
+                //Ads section
+                adsWidget(),
+                SizedBox(height: 16),
+                //Transaction history
+                recentTransactionWidget(),
+                
+              ],
+            ),
           ),
         ),
       ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:qwixa_app/services/all_services.dart';
 
-Widget quickServicesWidget() {
+Widget quickServicesWidget(BuildContext context) {
   return Container(
     padding: EdgeInsets.all(16),
 
@@ -74,24 +75,32 @@ Widget quickServicesWidget() {
               ],
             ),
 
-            //Column for Electricity
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.center,
-              spacing: 4,
-              children: [
-                //Icon for TV
-                Image.asset('assets/icons/app.png', height: 20),
-                //Text
-                Text(
-                  'More',
-                  style: GoogleFonts.manrope(
-                    fontSize: 13,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black,
+            //Column for More
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AllServicesScreen()),
+                );
+              },
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center,
+                spacing: 4,
+                children: [
+                  //Icon for TV
+                  Image.asset('assets/icons/app.png', height: 20),
+                  //Text
+                  Text(
+                    'More',
+                    style: GoogleFonts.manrope(
+                      fontSize: 13,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
